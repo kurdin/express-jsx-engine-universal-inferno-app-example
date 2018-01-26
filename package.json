@@ -11,8 +11,8 @@
   "author": "Sergey Kurdin <skurdin@yahoo.com> (http://anothervision.com)",
   "license": "ISC",
   "dependencies": {
-    "anemone-machina": "0.0.1",
     "anser": "^1.4.6",
+    "ansi-styles": "^3.2.0",
     "autoprefixer": "^7.2.5",
     "babel-loader": "^7.1.2",
     "babel-plugin-inferno": "^3.4.0",
