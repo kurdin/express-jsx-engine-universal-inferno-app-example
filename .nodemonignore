@@ -1,0 +1,4 @@
+node_modules/**
+public/**/*.js
+views/*
+public/js/bundles/*

@@ -1,0 +1,9 @@
+.DS_Store
+.idea/
+node_modules/
+tmp/
+public/js/bundles/*
+views/cache/*
+.log
+*.iml
+

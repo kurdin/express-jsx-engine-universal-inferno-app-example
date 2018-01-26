@@ -1,0 +1,24 @@
+{
+	"env": {
+		"node": true
+	},
+	"extends": "inferno-app",
+	"rules": {
+		"no-restricted-globals": 0,
+		"no-unused-expressions": 0,
+		"inferno/jsx-no-undef": [1, {"allowGlobals": 1 }],
+		"jsx-a11y/role-has-required-aria-props": 0,
+		"jsx-a11y/anchor-is-valid": 0,
+		"strict": 0
+	},
+	"globals": {
+		"libShared": true,
+		"AppSharedData": true,
+		"props": true,
+		"Component": true,
+		"skiShared": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 6
+	}
+}
