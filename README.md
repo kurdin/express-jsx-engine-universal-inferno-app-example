@@ -1,6 +1,6 @@
 # Express with JSX Engine and Universal Inferno App Example
 
-## installation
+## Run Demo
 
 `$ git clone https://github.com/kurdin/express-jsx-engine-universal-inferno-app-example`
 
