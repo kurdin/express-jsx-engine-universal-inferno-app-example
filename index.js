@@ -23,7 +23,7 @@ app.use('/test', (req, res) => {
 });
 
 app.get('/', function (req, res) {
-	console.time('render time');
+	console.time('rendered on server in');
 
 	let scripts = ['https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'];
 	let styles = ['https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css'];
@@ -47,8 +47,10 @@ app.get('/', function (req, res) {
       {name: 'Sergey'},
       {name: 'Bob'}
     ]
+  }, (err, html) => { 
+    console.timeEnd('rendered on server in');
+    res.send(html);
   });
-  console.timeEnd('render time'); 
 });
 
 app.listen(argv.port || 3000, () => {
