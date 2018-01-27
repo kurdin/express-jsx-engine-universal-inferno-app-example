@@ -28,7 +28,6 @@ app.get('/', function (req, res) {
 	let scripts = ['https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'];
 	let styles = ['https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css'];
 
-  console.log('getRandomArray', getRandomArray());
   res.render('test/users', {
     layout: 'layout-one',
     bundleScript: 'js/bundles/counter.js',
