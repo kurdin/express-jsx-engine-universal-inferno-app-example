@@ -1,4 +1,6 @@
 const Layout = require(`./${props.layout || 'default'}`);
+const AppSharedData = require('express-engine-inferno-jsx/appshared');
+
 <html>
   <head>
     <meta charset="utf-8" />

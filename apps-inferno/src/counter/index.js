@@ -7,4 +7,5 @@ let initProps = (window && window.appShared && window.appShared.initProps) || {}
 let appElementId = (window && window.appShared && window.appShared.appElementId) || 'counter-app';
 
 let el = document.getElementById(appElementId);
+
 render(<Counter {...initProps} />, el);

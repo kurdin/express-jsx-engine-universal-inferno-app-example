@@ -1,3 +1,5 @@
+const Component = require('inferno-component');
+
 class MySub extends Component {
   constructor(props) {
     super(props);
