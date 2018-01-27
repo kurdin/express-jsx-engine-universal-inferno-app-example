@@ -28,6 +28,7 @@ app.get('/', function (req, res) {
 	let scripts = ['https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'];
 	let styles = ['https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css'];
 
+  console.log('getRandomArray', getRandomArray());
   res.render('test/users', {
     layout: 'layout-one',
     bundleScript: 'js/bundles/counter.js',
@@ -64,6 +65,7 @@ function getRandomArray() {
   return [...new Array(getRandom(20))].map(() => getRandom(10));
 }
 
-function getRandom(max) {
-  return Math.floor(Math.random() * Math.floor(max));
+function getRandom(max, str) {
+  let n = Math.floor(Math.random() * Math.floor(max));
+  return n;
 }

@@ -1,17 +1,18 @@
-import Component from 'inferno-component';
-import { map } from 'lodash';
+import { Component, version } from 'inferno';
+
+console.log('inferno version', version);
 
 const CounterButtons = ({ count, hash, testArray, on }) => {
 	return (
   <div>
-    <h2>counter { count }</h2>
+    <h2>counter:<span>{ count }</span></h2>
     <button onClick={ on.substr }> - </button>
     <button onClick={ on.add }> + </button>
-    <h2>Random Hash: { hash }</h2>
+    <h2>Random Hash:<span>{ hash }</span></h2>
     <h2>Random Array with Lodash Map:</h2>
     <ul>
 			{/* lets test external map method from lodash */}
-			{map(testArray, a => <li>{a}</li>)}
+			{testArray.map((a,i) => <li>{a}</li>)}
     </ul>
   </div>
 	);
