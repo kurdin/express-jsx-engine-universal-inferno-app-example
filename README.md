@@ -36,7 +36,7 @@ Run server and application in production mode, goto http://localhost:3000 :
 ```shell
 
 $ npm run build // create production build
-$ npm run production // run production with all views and components cached
+$ npm run production // run production where all views and components compiled and cached
 $ autocannon -c 100 -d 1000 -l http://localhost:3000
 Running 1000s test @ http://localhost:3000
 100 connections
