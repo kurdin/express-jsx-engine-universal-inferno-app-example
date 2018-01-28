@@ -31,9 +31,9 @@ Run server and application in production mode, goto http://localhost:3000 :
 
 `$ npm run dev // or gulp`
 
-```shell
-
 ## Perf test under load
+
+```shell
 
 $ npm run build // create production build
 $ npm run production // run production with all views and components cached
