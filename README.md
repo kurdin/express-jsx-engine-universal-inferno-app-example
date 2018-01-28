@@ -33,6 +33,8 @@ Run server and application in production mode, goto http://localhost:3000 :
 
 ## Perf test under load
 
+Test Computer: MacBook Pro 2015 2.5 GHz Intel Core i7
+
 ```shell
 
 $ npm run build // create production build
