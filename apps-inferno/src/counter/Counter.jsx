@@ -1,7 +1,5 @@
 import { Component, version } from 'inferno';
 
-console.log('inferno version', version);
-
 const CounterButtons = ({ count, hash, testArray, on }) => {
 	return (
   <div>
