@@ -21,4 +21,11 @@ Run server and application in production mode, goto http://localhost:3000 :
 
 `$ npm run production`
 
+NOTE: `master` branch uses Inferno `v3.10.1` to see same example with Inferno `4.x` use `inferno4` branch:
+
+`$ git branch inferno4`
+`$ rm -rf node_modules`
+`$ npm i`
+`$ npm run dev // or gulp`
+
 Enjoy Inferno Universal App!
