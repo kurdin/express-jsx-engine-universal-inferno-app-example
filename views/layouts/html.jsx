@@ -6,8 +6,8 @@ const AppSharedData = require('express-engine-inferno-jsx/appshared');
     <meta charset="utf-8" />
     <title>{props.pageTitle}</title>
     <AppSharedData shared={props.shared} />
-    {props.scripts.map((script) => <script src={script} />)}
-    {props.styles.map((style) => <link rel="stylesheet" href={style} />)}
+    {props.scripts && props.scripts.map((script) => <script src={script} />)}
+    {props.scripts && props.styles.map((style) => <link rel="stylesheet" href={style} />)}
   </head>
   <body class={props.layout}>
     <Layout {...props} />

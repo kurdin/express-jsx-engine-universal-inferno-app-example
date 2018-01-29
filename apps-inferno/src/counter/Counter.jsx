@@ -1,4 +1,4 @@
-import { Component, version } from 'inferno';
+import { Component } from 'inferno';
 
 const CounterButtons = ({ count, hash, testArray, on }) => {
 	return (

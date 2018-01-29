@@ -22,6 +22,18 @@ app.use('/test', (req, res) => {
 	res.json(test);
 });
 
+app.use('/router', (req, res) => {
+  res.render('router', {
+    url: req.url,
+    context: {
+      test: 'test'
+    },
+    layout: 'layout-two',
+    bundleScript: '/js/bundles/router.js',
+    serverRender: true
+  });
+})
+
 app.get('/', function (req, res) {
 	console.time('rendered on server in');
 
@@ -30,7 +42,7 @@ app.get('/', function (req, res) {
 
   res.render('test/users', {
     layout: 'layout-one',
-    bundleScript: 'js/bundles/counter.js',
+    bundleScript: '/js/bundles/counter.js',
     serverRender: true,
     shared: {
       appElementId: 'counter-app',

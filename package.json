@@ -38,6 +38,7 @@
     "inferno": "^4.0.0-16",
     "inferno-dev-utils": "^4.0.0",
     "inferno-devtools": "^4.0.0-16",
+    "inferno-router": "^4.0.0-16",
     "inferno-server": "^4.0.0-16",
     "less-loader": "^4.0.5",
     "postcss-loader": "^2.0.10",
