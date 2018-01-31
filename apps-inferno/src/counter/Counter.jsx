@@ -46,4 +46,4 @@ class Counter extends Component {
 
 }
 
-export { Counter };
+export default Counter;

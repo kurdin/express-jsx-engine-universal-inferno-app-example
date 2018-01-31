@@ -48,6 +48,10 @@ app.get('/', function (req, res) {
       {name: 'Bob'}
     ]
   }, (err, html) => { 
+    if (err) {
+      console.error(err);
+      return res.status(500).send(err.message);
+    }
     console.timeEnd('rendered on server in');
     res.send(html);
   });

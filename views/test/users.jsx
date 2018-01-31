@@ -2,7 +2,7 @@ const { map } = require('lodash');
 
 const Layout = require('../layouts/html');
 const TestComp = require('../testcomp');
-const { Counter } = require('apps-inferno/src/counter/Counter');
+const Counter = require('apps-inferno/src/counter/Counter');
 
 <Layout {...props}>
   <div id="counter-app" >

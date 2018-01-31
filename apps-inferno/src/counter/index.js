@@ -1,5 +1,5 @@
 import { render, version } from 'inferno';
-import { Counter } from './Counter';
+import Counter from './Counter';
 
 console.log('inferno version:', version);
 console.time('rendered on client in');
