@@ -151,7 +151,7 @@ const App = () => (
 	</div>
 );
 
-const AppServer = ({ url, props }) => {
+const RouterAppServer = ({ url, props }) => {
 	return (
 		<StaticRouter basename="/router" location={url}>
 			<App />
@@ -159,4 +159,4 @@ const AppServer = ({ url, props }) => {
 	);
 };
 
-export { App, AppServer };
+export { App, RouterAppServer };

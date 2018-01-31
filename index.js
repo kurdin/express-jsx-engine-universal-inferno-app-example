@@ -23,6 +23,7 @@ app.use('/test', (req, res) => {
 });
 
 app.use('/router', (req, res) => {
+  // console.time('rendered on server in');
   res.render('router', {
     url: req.url,
     context: {
@@ -32,6 +33,7 @@ app.use('/router', (req, res) => {
     bundleScript: '/js/bundles/router.js',
     serverRender: true
   });
+  // console.timeEnd('rendered on server in');
 })
 
 app.get('/', function (req, res) {
@@ -60,6 +62,10 @@ app.get('/', function (req, res) {
       {name: 'Bob'}
     ]
   }, (err, html) => { 
+    if (err) {
+      console.error(err);
+      return res.status(500).send(err.message);
+    }
     console.timeEnd('rendered on server in');
     res.send(html);
   });

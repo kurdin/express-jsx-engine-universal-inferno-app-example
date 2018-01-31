@@ -1,5 +1,5 @@
 import { render, version } from 'inferno';
-import { Counter } from './Counter';
+import Counter from './Counter';
 
 if (process.env.NODE_ENV !== 'production') require('inferno-devtools');
 
