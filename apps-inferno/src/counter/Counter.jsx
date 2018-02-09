@@ -1,9 +1,9 @@
 import Component from 'inferno-component';
 import { map } from 'lodash';
 
-const CounterButtons = ({ count, hash, testArray, on }) => {
+const CounterButtons = ({ count, hash, testArray, on, els }) => {
 	return (
-  <div>
+  <div ref={e => els.main = e} >
     <h2>counter { count }</h2>
     <button onClick={ on.substr }> - </button>
     <button onClick={ on.add }> + </button>
@@ -19,6 +19,8 @@ const CounterButtons = ({ count, hash, testArray, on }) => {
 
 class Counter extends Component {
 
+	els = {}
+
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -30,10 +32,12 @@ class Counter extends Component {
 
 	on = {
 		add: e => {
+			console.log(this.els);
 			e.preventDefault();
 			this.setState({ count: this.state.count + 1 });
 		},
 		substr: e => {
+			console.log(this.els);
 			e.preventDefault();
 			this.setState({ count: this.state.count - 1 });
 		}
@@ -41,7 +45,7 @@ class Counter extends Component {
 
 	render() {
 		if (this.props.ssr === false) return null;
-		return <CounterButtons {...this.state} on={this.on}/>;
+		return <CounterButtons {...this.state} on={this.on} els={this.els} />;
 	}
 
 }
